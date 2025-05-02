@@ -15,5 +15,3 @@ docker build -t cyjginny/2025cloud:v2 .
 docker run -d -p 8080:80 cyjginny/2025cloud:v1
 ```
 
-## 在 GitHub 建立一個 Issue：
-- 狀態保持為 open
