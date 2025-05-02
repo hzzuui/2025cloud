@@ -14,6 +14,6 @@ docker build -t cyjginny/2025cloud:v2 .
 建構完成後，請使用以下指令來執行容器：
 ```bash
 docker run -d -p 8080:80 cyjginny/2025cloud:v1
-docker run -d -p 8080:80 cyjginny/2025cloud:v2
+docker run -d -p 8081:80 cyjginny/2025cloud:v2
 ```
 
