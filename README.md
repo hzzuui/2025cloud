@@ -16,4 +16,11 @@ docker build -t cyjginny/2025cloud:v2 .
 docker run -d -p 8080:80 cyjginny/2025cloud:v1
 docker run -d -p 8081:80 cyjginny/2025cloud:v2
 ```
-
+## 確認是否執行成功
+1. 查看目前執行中的容器：
+```bash
+docker ps
+```
+2. 開啟瀏覽器：
+- http://localhost:8080 （對應 v1）
+- http://localhost:8081 （對應 v2）
