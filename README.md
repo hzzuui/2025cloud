@@ -53,9 +53,9 @@ GitHub Actions 中的 docker-build.yml 指定以下步驟：
 ##  說明目前 Image Tag 設計邏輯
 1. Tag 名稱與用途
 - gh-auto : 表示為 GitHub Action 自動產生的版本
--     觸發行為 : 每次 push 到 main 分支時都會自動更新，用於開發測試、CI 驗證等非正式環境。
--     建構邏輯 : GitHub Action 自動啟動 
+  - 觸發行為 : 每次 push 到 main 分支時都會自動更新，用於開發測試、CI 驗證等非正式環境。
+  - 建構邏輯 : GitHub Action 自動啟動 
 - v1, v2 : 表示為手動建構並推送的穩定版本，通常用於正式發佈與部署
--     觸發行為 : 手動執行 docker build + docker push
--     建構邏輯 : 本地建構並推送
--     這類型 Tag 不會自動被覆蓋，適合版本追蹤與 rollback 。
+  - 觸發行為 : 手動執行 docker build + docker push
+  - 建構邏輯 : 本地建構並推送
+  - 這類型 Tag 不會自動被覆蓋，適合版本追蹤與 rollback 。
