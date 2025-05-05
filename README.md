@@ -39,7 +39,8 @@ docker ps
     D --> E[Build Docker Image]
     E --> F[Push to DockerHub]
 ```
-![自動化流程圖](flow.jpg)
+![自動化流程圖](flow.jpg)  
+
 3. 建置流程（build-and-push）
 GitHub Actions 中的 docker-build.yml 指定以下步驟：
 - checkout (檢出程式碼)：抓取最新的程式碼，把 GitHub repo 的程式碼下載到 runner 裡。
